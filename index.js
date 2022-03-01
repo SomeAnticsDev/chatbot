@@ -3,6 +3,7 @@ require('dotenv').config();
 
 const searchForBlogPost = require('./commands/blog');
 const listCommands = require('./commands/commands');
+const hintAboutPolls = require('./commands/poll');
 const searchForStream = require('./commands/stream');
 const shoutOut = require('./commands/so');
 
@@ -58,6 +59,11 @@ const moderatorCommands = {
 	so: shoutOut
 };
 
+/** @type {Object<string, Command>} */
+const broadcasterCommands = {
+	poll: hintAboutPolls
+};
+
 const COMMAND_REGEX = new RegExp(/^!([a-zA-Z0-9]+)(?:\W+)?(.*)?/);
 
 client.on('message', (ircChannel, tags, message, self) => {
@@ -75,6 +81,7 @@ client.on('message', (ircChannel, tags, message, self) => {
 		const noop = () => {};
 
 		const executeCommand = 
+			(isBroadcaster && broadcasterCommands[command]) ||
 			(isMod && moderatorCommands[command]) ||
 			commands[command] ||
 			noop;
