@@ -12,6 +12,9 @@ const extraDetails = {
 	b1mind: {
 		name: 'Brent'
 	},
+	'baldbeardedbuilder': {
+		name: 'Michael'
+	},
 	buildingbedrocklayout: {
 		name: 'Travis',
 		additionalMessage: `Travis is streaming his progress building out the Bedrock Layout component library.`
