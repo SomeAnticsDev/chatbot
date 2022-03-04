@@ -52,7 +52,7 @@ const moderatorCommands = {
 	// Simple call-and-response commands
 	frontendhorse: () => say('Join the Frontend Horse Discord! https://frontend.horse/chat'),
 	lunchdev: () => say('Join the Lunch Dev Discord server! https://discord.gg/lunchdev'),
-	merch: () => say('Check out the Some Antics merch store! https://someantics.dev/merch'),
+	merch: () => say('somean3Logo somean3Logo somean3Logo Check out the Some Antics merch store! https://someantics.dev/merch somean3Logo somean3Logo somean3Logo'),
 	reactpodcast: () => say('Join the Lunch Dev Discord server! https://discord.gg/lunchdev'),
 
 	// More complicated commands
