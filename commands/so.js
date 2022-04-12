@@ -12,12 +12,16 @@ const extraDetails = {
 	b1mind: {
 		name: 'Brent'
 	},
-	'baldbeardedbuilder': {
+	baldbeardedbuilder: {
 		name: 'Michael'
 	},
 	buildingbedrocklayout: {
 		name: 'Travis',
 		additionalMessage: `Travis is streaming his progress building out the Bedrock Layout component library.`
+	},
+	crutchcorn: {
+		name: 'Corbin',
+		additionalMessage: `They're working on the Framework Field Guide, a book about React, Angular, and Vue!`
 	},
 	fimion: {
 		name: 'Alex'
