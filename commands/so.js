@@ -40,6 +40,9 @@ const extraDetails = {
 	finitesingularity: {
 		name: 'Mark',
 	},
+	fksdev: {
+		name: 'Fred'
+	},
 	genericmikechen: {
 		name: 'Mike',
 		additionalMessage: `Mike's practice frontend dev interviews are a great resource for any frontend devs looking for their next job!`
@@ -74,6 +77,9 @@ const extraDetails = {
 	peruvianidol: {
 		name: 'Mike',
 		additionalMessage: `Mike holds office hours for CSS, Eleventy, and more each Friday.`
+	},
+	theo: {
+		name: 'Theo'
 	},
 	toefrog: {
 		name: 'Chris',
