@@ -15,9 +15,20 @@ const extraDetails = {
 	baldbeardedbuilder: {
 		name: 'Michael'
 	},
+	bholmesdev: {
+		name: 'Ben',
+		additionalMessage: 'Ben is streaming his work on Astro!'
+	},
+	bryanlrobinson: {
+		name: 'Bryan'
+	},
 	buildingbedrocklayout: {
 		name: 'Travis',
 		additionalMessage: `Travis is streaming his progress building out the Bedrock Layout component library.`
+	},
+	coderpad: {
+		name: 'CoderPad',
+		additionalMessage: 'Corbin interviews awesome folks from around web development!'
 	},
 	crutchcorn: {
 		name: 'Corbin',
@@ -25,6 +36,9 @@ const extraDetails = {
 	},
 	fimion: {
 		name: 'Alex'
+	},
+	finitesingularity: {
+		name: 'Mark',
 	},
 	genericmikechen: {
 		name: 'Mike',
@@ -38,6 +52,9 @@ const extraDetails = {
 		name: 'Jason',
 		additionalMessage: `Jason's show Learn With Jason is a great way to learn more about building for the Jamstack!`
 	},
+	joshuakgoldberg: {
+		name: 'Josh'
+	},
 	kevinpowellcss: {
 		name: 'Kevin',
 		additionalMessage: `Kevin's streams about CSS and more are incredibly informative.`
@@ -48,12 +65,18 @@ const extraDetails = {
 	mannimoki: {
 		name: 'Manny',
 	},
+	martine_dowden: {
+		name: 'Martine'
+	},
 	maxcellw: {
 		name: 'Prince',
 	},
 	peruvianidol: {
 		name: 'Mike',
 		additionalMessage: `Mike holds office hours for CSS, Eleventy, and more each Friday.`
+	},
+	toefrog: {
+		name: 'Chris',
 	},
 	trostcodes: {
 		name: 'Alex',
