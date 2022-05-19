@@ -131,17 +131,18 @@ const extraDetails = {
 			sentences.push(streamerDetails.additionalMessage);
 		}
 
-		if (streamerDetails?.emoji) {
-			sentences.unshift(streamerDetails.emoji);
-		}
-
 		// User has a recent enough stream with a holdover title
 		if (channel?.title) {
 			sentences.push(`${firstName}'s most recent stream was "${channel.title}"`);
 		}
 
-		sentences.unshift('.announce');
+		if (streamerDetails?.emoji) {
+			sentences.unshift(streamerDetails.emoji);
+			sentences.push(streamerDetails.emoji);
+		}
+
 		const message = sentences.join(' ');
+		client.say()
 		client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
 	} catch (err) {
 		console.error({err});
