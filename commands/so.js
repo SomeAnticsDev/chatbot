@@ -143,7 +143,7 @@ const extraDetails = {
 
 		const message = sentences.join(' ');
 		// client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
-		chatClient.announce(
+		await chatClient.announce(
 			process.env.TWITCH_BROADCASTER_USERNAME,
 			message
 		);
