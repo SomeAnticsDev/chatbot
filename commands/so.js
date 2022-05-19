@@ -140,7 +140,7 @@ const extraDetails = {
 			sentences.push(`${firstName}'s most recent stream was "${channel.title}"`);
 		}
 
-		const message = sentences.join(' ');
+		const message = '/announce ' + sentences.join(' ');
 		client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
 	} catch (err) {
 		console.error({err});
