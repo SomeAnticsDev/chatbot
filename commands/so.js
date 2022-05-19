@@ -1,4 +1,4 @@
-const {apiClient, chatClient} = require('../utils/twitch');
+const {apiClient} = require('../utils/twitch');
 
 /** @type {Object<string, {name: string, additionalMessage?: string, emoji?: string}>} */
 const extraDetails = {
@@ -141,7 +141,7 @@ const extraDetails = {
 			sentences.push(streamerDetails.emoji);
 		}
 
-		const message = '\/announce ' + sentences.join(' ');
+		const message = sentences.join(' ');
 		client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
 		// await chatClient.announce(
 		// 	process.env.TWITCH_BROADCASTER_USERNAME,
