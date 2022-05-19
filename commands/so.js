@@ -1,4 +1,4 @@
-const twitchApi = require('../utils/twitch');
+const {apiClient, chatClient} = require('../utils/twitch');
 
 /** @type {Object<string, {name: string, additionalMessage?: string, emoji?: string}>} */
 const extraDetails = {
@@ -115,8 +115,8 @@ const extraDetails = {
 
 		let [username] = body.split(' ');
 		username = username.replace('@', '');
-		const user = await twitchApi.users.getUserByName(username);
-		const channel = await twitchApi.channels.getChannelInfo(user.id);
+		const user = await apiClient.users.getUserByName(username);
+		const channel = await apiClient.channels.getChannelInfo(user.id);
 
 		const displayName = user?.displayName;
 		const url = `https://twitch.tv/${displayName}`;
@@ -142,7 +142,11 @@ const extraDetails = {
 		}
 
 		const message = sentences.join(' ');
-		client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
+		// client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
+		chatClient.announce(
+			process.env.TWITCH_BROADCASTER_USERNAME,
+			message
+		);
 	} catch (err) {
 		console.error({err});
 	}

@@ -1,5 +1,6 @@
 const {StaticAuthProvider} = require('@twurple/auth');
-const {ApiClient} = require('@twurple/api')
+const {ApiClient} = require('@twurple/api');
+const {ChatClient} = require('@twurple/chat');
 
 const authProvider = new StaticAuthProvider(
 	process.env.TWITCH_BOT_CLIENT_ID,
@@ -7,5 +8,12 @@ const authProvider = new StaticAuthProvider(
 );
 
 const apiClient = new ApiClient({authProvider});
+const chatClient = new ChatClient({
+	authProvider,
+	channels: [process.env.TWITCH_BROADCASTER_USERNAME]
+});
 
-module.exports = apiClient;
+module.exports = {
+	apiClient,
+	chatClient
+};

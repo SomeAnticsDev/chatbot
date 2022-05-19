@@ -20,6 +20,7 @@
 	"dependencies": {
 		"@twurple/api": "^5.0.14",
 		"@twurple/auth": "^5.0.14",
+		"@twurple/chat": "^5.1.6",
 		"algoliasearch": "^4.12.1",
 		"dotenv": "^14.3.2",
 		"tmi.js": "^1.8.5"
