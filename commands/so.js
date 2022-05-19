@@ -83,6 +83,9 @@ const extraDetails = {
 		name: 'Mike',
 		additionalMessage: `Mike holds office hours for CSS, Eleventy, and more each Friday.`
 	},
+	splendiddevelopment: {
+		name: 'Arran'
+	},
 	theo: {
 		name: 'Theo'
 	},
