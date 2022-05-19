@@ -140,9 +140,9 @@ const extraDetails = {
 			sentences.push(`${firstName}'s most recent stream was "${channel.title}"`);
 		}
 
+		sentences.unshift('.announce');
 		const message = sentences.join(' ');
-		// client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
-		client.emit('announce', message);
+		client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
 	} catch (err) {
 		console.error({err});
 	}
