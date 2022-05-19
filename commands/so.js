@@ -141,12 +141,12 @@ const extraDetails = {
 			sentences.push(streamerDetails.emoji);
 		}
 
-		const message = sentences.join(' ');
-		// client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
-		await chatClient.announce(
-			process.env.TWITCH_BROADCASTER_USERNAME,
-			message
-		);
+		const message = '\/announce ' + sentences.join(' ');
+		client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
+		// await chatClient.announce(
+		// 	process.env.TWITCH_BROADCASTER_USERNAME,
+		// 	message
+		// );
 	} catch (err) {
 		console.error({err});
 	}
