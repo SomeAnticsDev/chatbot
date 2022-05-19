@@ -142,7 +142,6 @@ const extraDetails = {
 		}
 
 		const message = sentences.join(' ');
-		client.say()
 		client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
 	} catch (err) {
 		console.error({err});
