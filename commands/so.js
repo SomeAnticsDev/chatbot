@@ -1,10 +1,11 @@
 const twitchApi = require('../utils/twitch');
 
-/** @type {Object<string, {name: string, additionalMessage?: string}>} */
+/** @type {Object<string, {name: string, additionalMessage?: string, emoji?: string}>} */
 const extraDetails = {
 	'5t3phdev': {
 		name: 'Steph',
-		additionalMessage: `Steph's streams are a great place to learn about CSS, Eleventy, and more!`
+		additionalMessage: `Steph's streams are a great place to learn about CSS, Eleventy, and more!`,
+		emoji: '✨'
 	},
 	ajcwebdev: {
 		name: 'Anthony'
@@ -17,7 +18,8 @@ const extraDetails = {
 	},
 	bholmesdev: {
 		name: 'Ben',
-		additionalMessage: 'Ben is streaming his work on Astro!'
+		additionalMessage: 'Ben is streaming his work on Astro!',
+		emoji: '🧑‍🚀'
 	},
 	bryanlrobinson: {
 		name: 'Bryan'
@@ -49,7 +51,8 @@ const extraDetails = {
 	},
 	geometricjim: {
 		name: 'Jim',
-		additionalMessage: `Jim's streams are an invaluable resources for learning accessibility tips.`
+		additionalMessage: `Jim's streams are an invaluable resources for learning accessibility tips.`,
+		emoji: '🐼'
 	},
 	jlengstorf: {
 		name: 'Jason',
@@ -60,13 +63,15 @@ const extraDetails = {
 	},
 	kevinpowellcss: {
 		name: 'Kevin',
-		additionalMessage: `Kevin's streams about CSS and more are incredibly informative.`
+		additionalMessage: `Kevin's streams about CSS and more are incredibly informative.`,
+		emoji: '🍞'
 	},
 	lunchdev: {
 		name: 'Chan',
 	},
 	mannimoki: {
 		name: 'Manny',
+		emoji: '🌈'
 	},
 	martine_dowden: {
 		name: 'Martine'
@@ -83,14 +88,17 @@ const extraDetails = {
 	},
 	toefrog: {
 		name: 'Chris',
+		emoji: '🐸'
 	},
 	trostcodes: {
 		name: 'Alex',
-		additionalMessage: `Alex's Frontend Horse streams, featuring guests from around web development and web design, are a great way to dive into creative coding!`
+		additionalMessage: `Alex's Frontend Horse streams, featuring guests from around web development and web design, are a great way to dive into creative coding!`,
+		emoji: '🐴'
 	},
 	whitep4nth3r: {
 		name: 'Salma',
-		additionalMessage: `Salma's streams are jam-packed with Jamstack knowledge and more!`
+		additionalMessage: `Salma's streams are jam-packed with Jamstack knowledge and more!`,
+		emoji: '⚡'
 	}
 };
 
@@ -123,12 +131,16 @@ const extraDetails = {
 			sentences.push(streamerDetails.additionalMessage);
 		}
 
+		if (streamerDetails?.emoji) {
+			sentences.unshift(streamerDetails.emoji);
+		}
+
 		// User has a recent enough stream with a holdover title
 		if (channel?.title) {
 			sentences.push(`${firstName}'s most recent stream was "${channel.title}"`);
 		}
 
-		const message = sentences.join(' ');
+		const message = '/announceblue ' + sentences.join(' ');
 		client.say(process.env.TWITCH_BROADCASTER_USERNAME, message);
 	} catch (err) {
 		console.error({err});
