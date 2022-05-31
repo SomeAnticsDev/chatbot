@@ -54,6 +54,9 @@ const extraDetails = {
 		additionalMessage: `Jim's streams are an invaluable resources for learning accessibility tips.`,
 		emoji: '🐼'
 	},
+	heyaustingil: {
+		name: 'Austin'
+	},
 	jlengstorf: {
 		name: 'Jason',
 		additionalMessage: `Jason's show Learn With Jason is a great way to learn more about building for the Jamstack!`
@@ -68,6 +71,10 @@ const extraDetails = {
 	},
 	lunchdev: {
 		name: 'Chan',
+	},
+	'm4dz_devrel': {
+		name: 'm4dz',
+		additionalMessage: 'm4dz and guests share insights about building design systems.'
 	},
 	mannimoki: {
 		name: 'Manny',
