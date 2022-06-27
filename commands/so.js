@@ -21,6 +21,9 @@ const extraDetails = {
 		additionalMessage: 'Ben is streaming his work on Astro!',
 		emoji: '🧑‍🚀'
 	},
+	brittneypostma: {
+		name: 'Brittney'
+	},
 	bryanlrobinson: {
 		name: 'Bryan'
 	},
@@ -63,6 +66,10 @@ const extraDetails = {
 	},
 	joshuakgoldberg: {
 		name: 'Josh'
+	},
+	jutanium: {
+		name: 'Dan',
+		additionalMessage: 'Dan is streaming about his forays in open source and documentation!'
 	},
 	kevinpowellcss: {
 		name: 'Kevin',
