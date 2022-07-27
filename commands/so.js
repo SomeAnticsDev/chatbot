@@ -16,10 +16,18 @@ const extraDetails = {
 	baldbeardedbuilder: {
 		name: 'Michael'
 	},
+	bdougieyo: {
+		name: 'Brian',
+		additionalMessage: `Brian is building Open Sauced to help get developers into open source contributions!`,
+		emoji: '🍕'
+	},
 	bholmesdev: {
 		name: 'Ben',
 		additionalMessage: 'Ben is streaming his work on Astro!',
 		emoji: '🧑‍🚀'
+	},
+	blackgirlbytes1: {
+		name: 'Rizèl'
 	},
 	brittneypostma: {
 		name: 'Brittney'
@@ -46,7 +54,8 @@ const extraDetails = {
 		name: 'Mark',
 	},
 	fksdev: {
-		name: 'Fred'
+		name: 'Fred',
+		emoji: '🚀'
 	},
 	genericmikechen: {
 		name: 'Mike',
