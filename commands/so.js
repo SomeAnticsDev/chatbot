@@ -102,6 +102,10 @@ const extraDetails = {
 	maxcellw: {
 		name: 'Prince',
 	},
+	nickytonline: {
+		name: 'Nick',
+		emoji: '🦙'
+	},
 	peruvianidol: {
 		name: 'Mike',
 		additionalMessage: `Mike holds office hours for CSS, Eleventy, and more each Friday.`
