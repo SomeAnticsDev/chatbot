@@ -101,6 +101,8 @@ const extraDetails = {
 	},
 	maxcellw: {
 		name: 'Prince',
+		emoji: '💜',
+		additionalMessage: `In addition to playing games and more, Prince is streaming their forays into Blender animation!`
 	},
 	nickytonline: {
 		name: 'Nick',
