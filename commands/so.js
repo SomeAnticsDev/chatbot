@@ -116,7 +116,8 @@ const extraDetails = {
 		name: 'Arran'
 	},
 	theo: {
-		name: 'Theo'
+		name: 'Theo',
+		emoji: '🐧'
 	},
 	toefrog: {
 		name: 'Chris',
@@ -131,6 +132,11 @@ const extraDetails = {
 		name: 'Salma',
 		additionalMessage: `Salma's streams are jam-packed with Jamstack knowledge and more!`,
 		emoji: '⚡'
+	},
+	zersiax: {
+		name: 'Florian',
+		additionalMessage: `Florian is a gamer without sight — checkout his entertaining playthroughs!`,
+		emoji: '🎮'
 	}
 };
 
