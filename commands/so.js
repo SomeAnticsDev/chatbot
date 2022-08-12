@@ -104,6 +104,10 @@ const extraDetails = {
 		emoji: '💜',
 		additionalMessage: `In addition to playing games and more, Prince is streaming their forays into Blender animation!`
 	},
+	mayank_dev: {
+		name: 'Mayank',
+		additionalMessage: 'They just started streaming development!'
+	},
 	nickytonline: {
 		name: 'Nick',
 		emoji: '🦙'
