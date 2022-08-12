@@ -106,7 +106,7 @@ const extraDetails = {
 	},
 	mayank_dev: {
 		name: 'Mayank',
-		additionalMessage: 'They just started streaming development!'
+		// additionalMessage: 'They just started streaming development!'
 	},
 	nickytonline: {
 		name: 'Nick',
