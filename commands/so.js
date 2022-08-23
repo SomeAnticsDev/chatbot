@@ -8,7 +8,8 @@ const extraDetails = {
 		emoji: '✨'
 	},
 	ajcwebdev: {
-		name: 'Anthony'
+		name: 'Anthony',
+		additionalMessage: `Anthony just started a series called AJC and the WebDevs - check it out!`
 	},
 	b1mind: {
 		name: 'Brent'
