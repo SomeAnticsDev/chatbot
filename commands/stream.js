@@ -25,8 +25,9 @@ module.exports = function searchForStream(client, command, body) {
 
 				const [hit] = hits;
 				const {url: path = '', title = '', keywords = []} = hit;
-				const youtubeUrl = keywords.find(kw => kw.includes('youtu.be') || kw.includes('youtube.com'));
-				const url = youtubeUrl || `https://someantics.dev${path}`;
+				// const youtubeUrl = keywords.find(kw => kw.includes('youtu.be') || kw.includes('youtube.com'));
+				// const url = youtubeUrl || `https://someantics.dev${path}`;
+				const url = `https://someantics.dev${path}`;
 				client.say(process.env.TWITCH_BROADCASTER_USERNAME, `Check out "${title}" at ${url}!`);
 			})
 	} catch (err) {
